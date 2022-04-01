@@ -1,0 +1,45 @@
+.team {
+  padding-bottom: 60px;
+  &__header {
+    h1 {
+      @extend %gradient-text2;
+      font-size: $font-size-super-large;
+      margin: 0 230px;
+      padding-bottom: 80px;
+    }
+  }
+
+  &__wrapper {
+    .img {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description {
+  @extend %flex-justify-between;
+
+    h5 {
+      color: $blue-extra-dark;
+      font-size: $font-size-md;
+    }
+
+    p {
+      color: $grey;
+      font-size: $font-size-sm;
+    }
+  }
+
+  .link {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: $grey-light-bg;
+    position: relative;
+
+    img {
+      position: absolute;
+      bottom: 25%;
+      right: 35%;
+    }
+  }
+}

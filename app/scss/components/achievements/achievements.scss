@@ -1,0 +1,41 @@
+.achievements {
+  background-color: $grey-light-bg;
+
+  &__blocks-media {
+    display: none;
+  }
+
+  .row {
+    padding-bottom: 80px;
+    @extend %grey-border-separator-bottom;
+  }
+
+  &__header {
+    text-align: center;
+    font-size: $font-size-xm;
+    color: $blue-extra-dark;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .blocks-wrapper {
+    position: relative;
+    background-color: $white;
+    border-radius: 12px;
+    width: 300px;
+    height: 110px;
+  }
+
+  .blocks-img {
+    @extend %flex-justify-center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    @extend %carousel-indicators-blue;
+  }
+  .carousel-indicators {
+    bottom: -80px;
+  }
+}

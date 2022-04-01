@@ -1,0 +1,42 @@
+@include phone {
+  .banner {
+    &__img-wrapper {
+      .container {
+        max-width: $breackpoint_xxs;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .banner {
+    &__img-wrapper {
+      background-image: none;
+      min-width: 540px;
+
+      h3 {
+        background-position: center calc(10% + 150px);
+        background-size: 100% 500px;
+        padding: 0 200px;
+      }
+    }
+  }
+}
+
+@include phone {
+  .banner {
+    .container {
+      max-width: 350px;
+    }
+
+    &__img-wrapper {
+      min-width: 330px;
+      h3 {
+        font-size: $font-size-xxl;
+        background-position: center calc(10% + 200px);
+        background-size: 100% 500px;
+        padding-top: 135px;
+      }
+    }
+  }
+}

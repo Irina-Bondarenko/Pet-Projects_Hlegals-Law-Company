@@ -1,0 +1,76 @@
+@include full-hd {
+  .publications-entry {
+    margin: 0 200px;
+  }
+}
+
+@include laptop {
+  .publications-entry {
+    margin: 0 100px;
+  }
+}
+
+@include tablet {
+  .publications-entry {
+    margin: 0 auto;
+
+    &__header,
+    &__description {
+      margin-left: 0;
+    }
+
+    &__header {
+      padding-left: 0;
+      margin-left: 10px;
+    }
+
+    &__checking {
+      h4,
+      p {
+        margin-left: 0;
+      }
+
+      ol {
+        margin-left: 12px;
+      }
+    }
+
+    &__advertisement {
+      span {
+        text-align: center;
+      }
+    }
+
+    &__socials {
+      justify-content: center;
+    }
+
+    &__image {
+      padding: 0;
+    }
+  }
+}
+
+@include phone {
+  .publications-entry {
+    padding: 40px 10px 20px 10px;
+    &__header {
+      h3 {
+        font-size: $font-size-xl;
+      }
+    }
+
+    &__description {
+      p {
+        margin: 0;
+      }
+    }
+
+    &__checking {
+      h2 {
+        font-size: $font-size-xxl;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}

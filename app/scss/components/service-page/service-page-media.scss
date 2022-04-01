@@ -1,0 +1,87 @@
+@include full-hd {
+  .service-page {
+    &:before {
+      bottom: -238.5%;
+    }
+
+    .service-description {
+      padding-top: 280px;
+      margin-top: -315px;
+    }
+  }
+}
+
+@include desktop {
+  .service-page {
+    &:before {
+      bottom: -923px;
+    }
+  }
+}
+
+@include laptop {
+  .service-page {
+    &:before {
+      bottom: -299%;
+    }
+
+    .service-description {
+      padding-top: 330px;
+      margin-top: -377px;
+    }
+  }
+}
+
+@include tablet {
+  .service-page {
+    .service-page-it {
+      &__wrapper {
+        width: 100%;
+        p {
+          text-align: start;
+        }
+      }
+
+      &__button {
+        align-self: center;
+      }
+    }
+    &:before {
+      bottom: -341.3%;
+    }
+
+    .service-description {
+      padding-top: 505px;
+      margin-top: -553px;
+    }
+  }
+}
+
+@include phone {
+  .service-page {
+    &:before {
+      bottom: -347.5%;
+    }
+
+    .service-description {
+      padding-top: 800px;
+      margin-top: -854px;
+    }
+  }
+}
+
+@media (max-width: 563px) {
+  .service-page {
+    &:before {
+      bottom: -347.5%;
+    }
+  }
+}
+
+@media (max-width: 537px) {
+  .service-page {
+    &:before {
+      bottom: -369.6%;
+    }
+  }
+}

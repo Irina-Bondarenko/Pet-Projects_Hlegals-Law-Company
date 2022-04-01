@@ -1,0 +1,40 @@
+header {
+  height: 200px;
+}
+
+.header {
+  &__nav {
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-brand {
+      color: $blue-light;
+      font-size: $font-size-sm;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-brand:hover {
+      color: $red-pink;
+    }
+
+    .nav-item:hover {
+      border-bottom: 3px solid $red-pink;
+    }
+  }
+
+  a {
+    color: $grey;
+  }
+
+  &__contacts {
+    .contacts {
+      color: $grey;
+
+      & > div:not(:last-child):after {
+        display: none;
+      }
+    }
+
+    label input:checked + span {
+      color: $white;
+    }
+  }
+}

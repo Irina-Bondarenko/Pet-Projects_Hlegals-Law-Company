@@ -1,0 +1,106 @@
+.contacts {
+  &__address {
+    padding-bottom: 80px;
+    .contact-form {
+      background-color: $grey-light-bg;
+      border-radius: 12px;
+      width: 527px;
+
+      h3 {
+        padding: 20px 20px;
+        @extend %gradient-text2;
+        font-size: $font-size-xxl;
+        align-self: start;
+      }
+
+      p {
+        margin: 0;
+        text-align: left;
+        align-self: start;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        color: $grey;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      label,
+      input,
+      textarea {
+        border-radius: 8px;
+        border: none;
+        width: 100%;
+        resize: none;
+        color: $grey;
+
+        input::placeholder {
+          color: $grey;
+        }
+
+        input {
+          padding-left: 10px;
+        }
+      }
+      label {
+        padding: 0 20px 20px 20px;
+        width: 100%;
+      }
+
+      textarea[name="message"] {
+        height: 180px;
+      }
+
+      input[name="name"],
+      input[name="phone"],
+      input[name="email"] {
+        height: 47px;
+      }
+
+      button {
+        @extend %blue-button;
+        color: $white;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__form {
+    .address {
+      padding-bottom: 20px;
+      border-bottom: 4px solid #e6e6f0;
+      width: 75%;
+      font-size: $font-size-xl;
+    }
+
+    .phone-email {
+      padding: 40px 0;
+      border-bottom: 4px solid #e6e6f0;
+      width: 75%;
+      font-size: $font-size-xl;
+
+      a[href="tel:+380503901591"] {
+        padding-bottom: 20px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .facebook {
+      padding-top: 20px;
+
+      .facebook-description {
+        font-size: $font-size-xs;
+        width: 25%;
+        color: $blue-light;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      padding-right: 10px;
+    }
+  }
+}

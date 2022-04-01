@@ -1,0 +1,83 @@
+@include laptop {
+  .header {
+    &__logo,
+    &__nav {
+      margin-top: 30px;
+    }
+
+    &__nav {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 0;
+
+      .navbar {
+        justify-content: flex-end;
+      }
+
+      .navbar-collapse {
+        text-align: end;
+      }
+    }
+
+    .navbar-toggler-icon {
+      background-color: $red-pink;
+      border-radius: 8px;
+    }
+  }
+}
+
+@include tablet {
+  .header {
+    a {
+      color: $grey;
+    }
+
+    &__logo,
+    &__contacts {
+      padding: 0;
+    }
+
+    &__contacts {
+      .contacts {
+        justify-content: space-between;
+        color: $grey;
+
+        & > div:not(:last-child) {
+          padding: 0;
+        }
+
+        & > div:not(:last-child):after {
+          display: none;
+        }
+        .address,
+        .facebook {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@include phone {
+  .header {
+    .container {
+      max-width: 100%;
+      padding: 0 35px;
+    }
+
+    &__contacts {
+      width: 100%;
+    }
+
+    &__nav {
+      padding: 0;
+      margin: 0;
+    }
+
+    &__logo {
+      img {
+        width: 150%;
+      }
+    }
+  }
+}

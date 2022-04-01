@@ -1,0 +1,55 @@
+.services {
+  padding-bottom: 80px;
+
+  a {
+    text-decoration: none;
+  }
+
+  &__header {
+    padding-bottom: 40px;
+
+    a {
+      text-decoration: none;
+      color: $grey;
+      font-size: $font-size-sm;
+    }
+
+    h3 {
+      @extend %gradient-text;
+      font-size: $font-size-super-large;
+    }
+
+    img {
+      vertical-align: inherit;
+    }
+  }
+
+  .image {
+    padding-bottom: 20px;
+  }
+
+  h5 {
+    color: $blue-light;
+    font-size: $font-size-x-l;
+    padding-bottom: 15px;
+  }
+
+  p {
+    color: $white;
+    font-weight: 200;
+    font-size: $font-size-md;
+  }
+
+  .row > div {
+    padding-right: 25px;
+  }
+
+  &__it,
+  &__lawyer,
+  &__relationships,
+  &__agrements,
+  &__protect,
+  &__court {
+    padding-bottom: 30px;
+  }
+}

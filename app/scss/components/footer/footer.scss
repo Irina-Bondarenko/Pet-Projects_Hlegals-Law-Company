@@ -1,0 +1,52 @@
+.footer {
+  background-color: $grey-light-bg;
+  padding-top: 35px;
+  padding-bottom: 40px;
+
+  &__copyright-media {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+
+    .map,
+    .email {
+      color: $blue-light;
+    }
+  }
+
+  .separator1 {
+    padding: 0 10px 0 40px;
+  }
+
+  &__address {
+    .map {
+      font-size: $font-size-xs;
+      padding-top: 4px;
+    }
+
+    p {
+      font-size: $font-size-sm;
+    }
+  }
+
+  &__copyright {
+    span {
+      font-size: $font-size-sm;
+      color: $grey;
+    }
+  }
+
+  &__contacts {
+    .separator2,
+    .separator3 {
+      padding: 0 10px 0 10px;
+    }
+
+    .phone-number {
+      color: $black;
+      font-size: $font-size-sm;
+    }
+  }
+}

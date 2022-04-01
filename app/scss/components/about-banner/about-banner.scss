@@ -1,0 +1,15 @@
+.banner {
+  background: url("./../images/team-banner.svg");
+  background-size: cover;
+  background-position: 50%;
+
+  h2 {
+    font-size: 96px;
+    letter-spacing: 63px;
+    padding: 205px 0;
+    color: #fff;
+    opacity: 0.8;
+    text-shadow: 0 15px 30px rgb(40 40 86 / 80%);
+    text-align: center;
+  }
+}

@@ -1,0 +1,55 @@
+@include desktop {
+  .team {
+    &__wrapper {
+      justify-content: space-between;
+    }
+  }
+}
+
+@include laptop {
+  .team {
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__description {
+      width: 100%;
+    }
+
+    .contacts,
+    .description__header {
+      flex-direction: column;
+    }
+
+    .separator1 {
+      display: none;
+    }
+
+    span,
+    .email {
+      padding-bottom: 10px;
+    }
+
+    &__image,
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@include tablet {
+  .team {
+    &__description {
+
+      .description__header {
+        h2 {
+          font-size: $font-size-xxl;
+        }
+
+        .contacts {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

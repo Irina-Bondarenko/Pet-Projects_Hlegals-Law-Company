@@ -1,0 +1,40 @@
+@include full-hd {
+  .team {
+    &__wrapper {
+      .img {
+        text-align: center;
+      }
+    }
+
+    &__description {
+      justify-content: space-around;
+    }
+  }
+}
+
+@include laptop {
+  .team {
+    &__header {
+      h1 {
+        font-size: $font-size-xxl;
+        margin: 0;
+        padding-bottom: 20px;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+
+      .teammeber {
+        width: 200px;
+      }
+    }
+
+    &__description {
+      padding-left: 20px;
+      flex-direction: column;
+      justify-content: end;
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+@include laptop {
+  .header {
+    &__logo,
+    &__nav {
+      margin-top: 30px;
+    }
+    &__nav {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 0;
+      .navbar {
+        justify-content: flex-end;
+      }
+
+      .navbar-collapse {
+        text-align: end;
+      }
+    }
+    .navbar-nav {
+      background-color: $red-pink;
+      border-radius: 12px;
+      opacity: 85%;
+      text-align: center;
+    }
+  }
+}
+
+@include tablet {
+  .header {
+    a {
+      color: $grey;
+    }
+
+    &__contacts {
+      .contacts {
+        justify-content: space-between;
+        color: $grey;
+
+        & > div:not(:last-child) {
+          padding: 0;
+        }
+
+        & > div:not(:last-child):after {
+          display: none;
+        }
+        .address,
+        .facebook {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@include phone {
+  .header {
+    .container {
+      max-width: 350px;
+    }
+
+    &__contacts {
+      width: 100%;
+    }
+
+    &__logo {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .modal {
+    .modal-dialog {
+      width: 435px;
+    }
+  }
+}
+
+@include laptop {
+  .modal {
+    .modal-dialog {
+      width: 320px;
+    }
+  }
+}
+
+@include phone {
+  .modal {
+    .modal-dialog {
+      margin: 1.75rem auto;
+    }
+  }
+}

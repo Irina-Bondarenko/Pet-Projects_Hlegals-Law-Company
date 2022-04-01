@@ -1,0 +1,42 @@
+//$breackpoint_xxl: 1399px;
+//$breackpoint_xl: 1199px;
+//$breackpoint_md: 991px;
+//$breackpoint_sm: 767px;
+//$breackpoint_xs: 575px;
+//$breackpoint_xxs: 350px;
+
+@mixin full-hd() {
+  @media (max-width: $breackpoint_xxl) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media (max-width: $breackpoint_xl) {
+    @content;
+  }
+}
+
+@mixin laptop() {
+  @media (max-width: $breackpoint_md) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (max-width: $breackpoint_sm) {
+    @content;
+  }
+}
+
+@mixin phone() {
+  @media (max-width: $breackpoint_xs) {
+    @content;
+  }
+}
+
+@mixin phone-sm() {
+  @media (max-width: $breackpoint_xxs) {
+    @content;
+  }
+}

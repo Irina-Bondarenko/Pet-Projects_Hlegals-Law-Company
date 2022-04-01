@@ -1,0 +1,40 @@
+@include laptop {
+  .footer {
+    padding-top: 0;
+    &__copyright {
+      display: none;
+    }
+
+    &__copyright-media {
+      display: inline-block;
+      padding-top: 20px;
+      text-align: center;
+
+      span {
+        font-size: $font-size-sm;
+        color: $grey;
+      }
+    }
+
+    &__wrapper,
+    &__address,
+    &__contacts {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .separator1,
+    .separator2,
+    .separator3 {
+      display: none;
+    }
+
+    .facebook,
+    .phone-number,
+    .email {
+      padding-top: 20px;
+    }
+  }
+}

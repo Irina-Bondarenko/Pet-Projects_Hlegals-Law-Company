@@ -1,0 +1,65 @@
+.cases {
+  padding-bottom: 30px;
+
+  a {
+    text-decoration: none;
+  }
+
+  .firstBlock_header,
+  &__firstBlock,
+  &__secondBlock,
+  &__thirdBlock,
+  &__first2Block,
+  &__second2Block,
+  &__third2Block {
+    background-color: $grey-light-bg;
+    border: 1px solid white;
+    padding: 0;
+  }
+
+  h6 {
+    color: $grey-dark;
+    margin: 0;
+    font-size: $font-size-x-l;
+    padding: 105px 20px 65px 20px;
+  }
+  span {
+    color: $grey;
+    font-size: $font-size-md;
+    padding-left: 20px;
+  }
+
+  .firstBlock_header {
+    h6 {
+      color: $red-pink;
+      font-size: $font-size-xl;
+      padding: 20px;
+    }
+  }
+  .firstBlock_hillel {
+    h6 {
+      padding: 40px 20px 65px 20px;
+    }
+  }
+  .firstBlock_hillel,
+  &__secondBlock,
+  &__thirdBlock,
+  &__first2Block,
+  &__second2Block,
+  &__third2Block {
+    padding-bottom: 20px;
+  }
+
+  &__first2Block {
+    h6 {
+      padding: 20px 20px 65px 20px;
+    }
+  }
+
+  &__second2Block,
+  &__third2Block {
+    h6 {
+      padding: 76px 20px 65px 20px;
+    }
+  }
+}

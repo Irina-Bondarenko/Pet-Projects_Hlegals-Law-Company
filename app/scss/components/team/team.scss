@@ -1,0 +1,51 @@
+.team {
+  padding-top: 60px;
+  padding-bottom: 80px;
+
+  &__avatar-small {
+    display: none;
+  }
+
+  .carousel-indicators {
+    bottom: -60px;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    @extend %carousel-indicators-blue;
+  }
+  &__bg {
+    background-color: $grey-light-bg;
+    border-radius: 11px;
+  }
+
+  &__description {
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 40px;
+    h2 {
+      @extend %gradient-text2;
+      padding-bottom: 20px;
+      font-size: $font-size-super-large;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: $blue-light;
+      font-size: $font-size-xm;
+
+      img {
+        padding-bottom: 3px;
+      }
+    }
+
+    span {
+      display: block;
+      color: $grey;
+      font-size: $font-size-sm;
+    }
+    span:nth-of-type(2) {
+      font-weight: 100;
+    }
+  }
+}

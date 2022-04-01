@@ -1,0 +1,12 @@
+.services {
+  background: $Gradient-Background-Tabs;
+  overflow: hidden;
+  padding-top: 200px;
+}
+
+.background-wrapper {
+  @extend %background-wrapper-shadow;
+  margin-bottom: 60px;
+
+
+}

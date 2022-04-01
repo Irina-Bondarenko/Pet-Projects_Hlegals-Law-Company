@@ -1,0 +1,35 @@
+// Common styles should be placed here
+// Atomic classes, some styles for base element etc.
+
+body {
+  font-family: TT Norms, sans-serif;
+}
+
+a {
+  display: inline-block;
+}
+
+//Modal - Start
+
+.modal {
+  position: absolute;
+  bottom: 10%;
+  left: 35%;
+  padding-left: 0;
+  display: block;
+
+  .contacts__address {
+    padding-bottom: 0;
+  }
+
+  .modal-dialog {
+    width: 530px;
+    border-radius: 12px;
+  }
+
+  .contacts__address .contact-form {
+    width: 100%;
+  }
+}
+
+//Modal - End

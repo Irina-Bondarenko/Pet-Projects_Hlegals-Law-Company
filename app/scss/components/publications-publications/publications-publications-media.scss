@@ -1,0 +1,35 @@
+@include full-hd {
+  .publications {
+    .publications__card1,
+    .publications__card2,
+    .publications__card3 {
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .publications {
+
+
+      hr {
+        margin: 9px 20px 0 20px;
+      }
+
+  }
+}
+
+@include tablet {
+  .publications {
+    .publications__card1,
+    .publications__card2,
+    .publications__card3 {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

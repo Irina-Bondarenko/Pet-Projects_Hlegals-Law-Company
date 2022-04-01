@@ -1,0 +1,61 @@
+// Your variables should be placed here
+// https://sass-scss.ru/documentation/sassscript/peremennie/
+
+//COLORS
+
+//Gradients
+$Gradient-Background-Header: linear-gradient(
+  42.01deg,
+  #323264 14.33%,
+  #323264 51.39%,
+  #7a425e 87.53%
+);
+$Gradient-Background-Tabs: linear-gradient(
+  228.57deg,
+  #323264 11.93%,
+  #323264 57.17%,
+  #643e72 87.46%
+);
+$Gradient-Background-Publications: linear-gradient(
+        180deg,
+        rgba(245, 245, 250, 0) 0%,
+#f5f5fa 86.5%);
+
+//Red/Pink
+$red-pink: #f0145a;
+
+//Black/White
+$white: #ffffff;
+$black: #000000;
+
+//Blue
+$blue-light: #24a3ff;
+$blue-extra-dark: #323264;
+$blue-dark: #46466e;
+
+//Grey
+$grey: #b3b3ba;
+$grey-light-bg: #f5f5fa;
+$grey-dark: #686887;
+$grey-wrapper-before: #cacadb;
+$grey-wrapper-after: #e7e7f2;
+$grey-separator: #e6e6f0;
+
+//BREAKPOINTS
+$breackpoint_xxl: 1399px;
+$breackpoint_xl: 1199px;
+$breackpoint_md: 991px;
+$breackpoint_sm: 767px;
+$breackpoint_xs: 575px;
+$breackpoint_xxs: 350px;
+
+//FONT_SIZES
+$font-size-xs: 12px;
+$font-size-xm: 14px;
+$font-size-sm: 16px;
+$font-size-md: 18px;
+$font-size-xl: 21px;
+$font-size-x-l: 24px;
+$font-size-xxl: 32px;
+$font-size-extral: 38px;
+$font-size-super-large: 42px;

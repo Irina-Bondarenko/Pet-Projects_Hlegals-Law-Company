@@ -1,0 +1,74 @@
+z.background-wrapper {
+  @extend %background-wrapper-shadow;
+}
+
+.tabs {
+  padding-top: 80px;
+  padding-bottom: 100px;
+
+  &__carousel {
+    display: none;
+  }
+
+  button {
+    border: none;
+    background: none;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active,
+  .nav-tabs .nav-link {
+    color: $grey;
+    background: inherit;
+    border-color: transparent;
+  }
+
+  .nav-item:hover {
+    @extend %gradient-text;
+    border-right: 5px solid #f0145a;
+  }
+
+  .nav-item {
+    border-right: 5px solid $white;
+    padding-right: 40px;
+    line-height: 1;
+
+    button {
+      text-align: end;
+    }
+  }
+
+  .nav-item:not(:last-child) {
+    padding-bottom: 15px;
+  }
+
+  .nav-tabs {
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: $font-size-super-large;
+    padding-right: 35px;
+    border-bottom: none;
+  }
+  .nav-tabs .nav-link:hover,
+  .nav-tabs .nav-link:focus {
+    border: none;
+  }
+
+  .nav-tabs .nav-link {
+    border: none;
+  }
+
+  .tab-content {
+    padding-top: 50px;
+    color: $white;
+
+    h3 {
+      font-size: $font-size-xxl;
+    }
+
+    span {
+      font-size: $font-size-xl;
+      font-weight: 100;
+    }
+  }
+}

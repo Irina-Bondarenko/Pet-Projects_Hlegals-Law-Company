@@ -1,0 +1,70 @@
+.team {
+  padding-bottom: 80px;
+
+  &__wrapper {
+    @extend %flex-wrap;
+    justify-content: center;
+  }
+
+  &__image {
+    width: 40%;
+    text-align: center;
+  }
+
+  &__description {
+    width: 50%;
+
+    .description__header {
+      @extend %flex-wrap;
+      @extend %grey-border-separator-bottom;
+
+      h2 {
+        @extend %gradient-text2;
+        font-size: $font-size-super-large;
+        margin: 0;
+        padding-bottom: 13px;
+      }
+
+      .contacts {
+        font-size: $font-size-sm;
+        padding-bottom: 20px;
+
+        a {
+          text-decoration: none;
+        }
+
+        span {
+          color: $grey;
+        }
+
+        .email a,
+        .linkedin a {
+          color: $blue-light;
+        }
+      }
+
+      .separator1 {
+        padding: 0 10px;
+      }
+    }
+
+    .description__about {
+      padding-top: 40px;
+      p {
+        font-size: $font-size-md;
+        line-height: 26px;
+        font-weight: 300;
+      }
+
+      h5 {
+        font-size: $font-size-xm;
+        color: $blue-extra-dark;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        margin: 0;
+        letter-spacing: 1px;
+        font-weight: 600;
+      }
+    }
+  }
+}

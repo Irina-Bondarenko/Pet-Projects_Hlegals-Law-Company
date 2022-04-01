@@ -1,0 +1,63 @@
+@include full-hd {
+  .achievements {
+    .blocks-wrapper {
+      width: 250px;
+      height: 110px;
+    }
+  }
+}
+
+@include desktop {
+  .achievements {
+    .blocks-wrapper {
+      width: 220px;
+      height: 110px;
+    }
+  }
+}
+
+@include laptop {
+  .achievements {
+    &__blocks {
+      display: none;
+    }
+
+    &__blocks-media {
+      display: block;
+    }
+
+    .blocks-wrapper {
+      width: 300px;
+      height: 110px;
+    }
+  }
+}
+
+@include tablet {
+  .achievements {
+    .blocks-wrapper {
+      width: 220px;
+      height: 110px;
+    }
+  }
+}
+
+@include phone {
+  .achievements {
+    .row {
+      margin: 0 20px;
+    }
+    .blocks-wrapper {
+      width: 120px;
+      height: 110px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .legal {
+      width: 50%;
+    }
+  }
+}

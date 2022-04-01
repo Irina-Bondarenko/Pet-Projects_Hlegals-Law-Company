@@ -1,0 +1,20 @@
+// Your mixins should be placed here
+// https://sass-scss.ru/documentation/miksini/obyavlenie_miksina/
+
+@mixin background-wrapper ($source, $bg-size, $bg-position) {
+  content: "";
+  @extend %flex-justify-center;
+  background-image: url($source);
+  background-size: $bg-size;
+  background-position: $bg-position;
+  background-repeat: no-repeat;
+  align-items: center;
+
+}
+
+@mixin input-radio ($color) {
+  background: $color;
+  height: 35px;
+  width: 125px;
+  display: inline-block;
+}

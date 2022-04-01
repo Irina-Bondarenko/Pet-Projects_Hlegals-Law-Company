@@ -1,0 +1,72 @@
+header {
+  height: 200px;
+}
+
+.publications {
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .publications__card1,
+  .publications__card2,
+  .publications__card3 {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__switcher-bg,
+  .form-check {
+    background-color: $grey-separator;
+
+    label {
+      border-radius: 12px;
+      margin: 2px;
+      padding: 5px 0;
+      text-align: center;
+    }
+
+    span {
+      color: $blue-extra-dark;
+      font-size: $font-size-md;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    input[type="radio"] + label {
+      @include input-radio($grey-separator);
+    }
+
+    input[type="radio"]:checked + label {
+      @include input-radio($white);
+    }
+  }
+
+  .form-check1 {
+    border-radius: 12px 0 0 12px;
+  }
+
+  .form-check2 {
+    border-radius: 0 12px 12px 0;
+  }
+
+  &__cards {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    @extend %grey-border-separator-bottom;
+
+    .publications__button {
+      position: relative;
+      transform: translateX(0);
+      left: 0;
+      top: 0;
+      text-align: center;
+    }
+  }
+}

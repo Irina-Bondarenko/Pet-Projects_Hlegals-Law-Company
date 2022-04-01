@@ -1,0 +1,53 @@
+@include desktop {
+  .tabs {
+    &__nav {
+      display: none;
+    }
+
+    &__carousel {
+      display: inline-block;
+
+      p {
+        background: -webkit-linear-gradient(#ef8080, #f0145a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: $font-size-xm;
+      }
+
+      h3 {
+        color: $white;
+        font-size: $font-size-xl;
+      }
+
+      span {
+        color: $white;
+        font-size: $font-size-md;
+        font-weight: 100;
+      }
+
+      .nav-link {
+        padding: 0;
+      }
+
+      .carousel-indicators [data-bs-target] {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $blue-light;
+        margin-right: 7px;
+      }
+
+      .carousel-indicators {
+        bottom: -50px;
+      }
+    }
+  }
+
+  @include phone {
+    .tabs {
+      &__carousel {
+        padding: 10px 20px;
+      }
+    }
+  }
+}

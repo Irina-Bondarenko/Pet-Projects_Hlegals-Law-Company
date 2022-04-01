@@ -1,0 +1,53 @@
+.banner {
+  height: 100vh;
+  background: $Gradient-Background-Header;
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: 1px 0 60px 70px #323264;
+  }
+
+  &__img-wrapper {
+    @include background-wrapper(
+      "./../images/backgrounds/Frame.svg",
+      70%,
+      center 80%
+    );
+    //max-height: 50%;
+    max-width: 70%;
+    min-width: 700px;
+    margin: 0 auto;
+
+    h3 {
+      @include background-wrapper(
+        "./../images/symbol-long-leg.svg",
+        60% 700px,
+        center calc(50% + 80px)
+      );
+      height: 100%;
+      font-size: $font-size-extral;
+      color: $white;
+      padding: 0 200px;
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+  &__button {
+    button {
+      position: absolute;
+      border: none;
+      background: transparent;
+      top: 85%;
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
+}

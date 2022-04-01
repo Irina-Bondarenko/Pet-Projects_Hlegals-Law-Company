@@ -1,0 +1,40 @@
+@include desktop {
+  .contacts {
+    &__address {
+      padding-top: 40px;
+      .contact-form {
+        margin: 0 auto;
+      }
+    }
+
+    &__form {
+      text-align: center;
+      .address,
+      .phone-email {
+        width: 100%;
+      }
+      .facebook {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@include phone {
+  .contacts {
+    &__address {
+      .contact-form {
+        width: 100%;
+      }
+    }
+
+    &__form {
+      padding-left: 20px;
+      text-align: start;
+    }
+
+    .facebook {
+      justify-content: start;
+    }
+  }
+}

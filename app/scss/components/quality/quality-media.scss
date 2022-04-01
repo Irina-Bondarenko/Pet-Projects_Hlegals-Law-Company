@@ -1,0 +1,14 @@
+@include tablet {
+  .quality {
+    padding-bottom: 40px;
+    &__description,
+    &__thesis {
+      width: 100%;
+      padding: 20px 20px;
+    }
+
+    &__thesis {
+      font-size: $font-size-xxl;
+    }
+  }
+}

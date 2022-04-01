@@ -1,0 +1,36 @@
+@include phone {
+  .services {
+    padding-top: 180px;
+    .container {
+      max-width: 400px;
+    }
+
+    &__lawyer,
+    &__relationships,
+    &__court,
+    &__agrements,
+    &__protect,
+    &__it {
+      width: 100%;
+      padding: 20px 30px;
+
+      .image {
+        float: left;
+        padding-right: 20px;
+        padding-bottom: 10px;
+      }
+    }
+
+    &__header {
+      padding: 10px 20px;
+
+      h3 {
+        font-size: $font-size-xxl;
+      }
+
+      a {
+        font-size: $font-size-xs;
+      }
+    }
+  }
+}
